@@ -1,0 +1,67 @@
+GET http://127.0.0.1/InternShips/APIs/dbConnect.php
+API : CheckDB
+# Response Connected
+# {
+#   "code": 200,
+#   "message": "Database Connection Successful"
+# }
+
+#Response NoConnected
+# {
+#   "code": 500,
+#   "message": "DataBase Connection Unsuccessful"
+# }
+
+
+####
+GET http://127.0.0.1/InternShips/APIs/dbConnect.php
+# Response If No API Header Is Used
+# {
+#   "code": 404,
+#   "message": "Request Could Not Be Processed"
+# }
+
+####
+GET http://127.0.0.1/InternShips/APIs/createAccount.php
+API : PutDetails
+
+
+
+####
+GET http://127.0.0.1/InternShips/APIs/createAccount.php/Vibhuti/Singh/vibhuti019/Password
+API : PutDetails
+# Checks Dupliacte Values
+# Checks Inappropiate Values 
+# Checks Inappropiate size
+
+
+####
+GET http://127.0.0.1/InternShips/APIs/logIn.php/vibhuti019/Password
+API : PutDetails
+# {
+#   "code": 200,
+#   "message": "Login Successful",
+#   "UserID": "f7472696e77d7d39512d888081ed8a1c",
+#   "UserName": "vibhuti019",
+#   "API Key": "84d9d786fb86400058c66a800e6b730d",
+#   "Session": "ZDU3MTg1Y2ZiZGQ1ZDlkYmVjMjA4YzMxNTM4NTUxNGM=",
+#   "Auth": "cfcd208495d565ef66e7dff9f98764da"
+# }
+
+
+
+####
+GET http://127.0.0.1/InternShips/APIs/getChat.php/cfcd208495da565f66e7adff9f98user/cf610577d4c5f229202b74bcefec5e75
+API : PutDetails
+AUTH : cfcd208495da565f66e7adff9f9data1
+
+
+
+
+
+####
+GET http://127.0.0.1/InternShips/APIs/verifyAuthAndSession.php
+API : FetchDetails
+
+
+####
